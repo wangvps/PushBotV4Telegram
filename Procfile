@@ -1,0 +1,1 @@
+worker: java -jar target/pushbotv-1.0.0-V-jar-with-dependencies.jar

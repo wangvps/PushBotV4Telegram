@@ -1,0 +1,29 @@
+{
+    "name": "UniPushBot V Version",
+    "description": "UniOreo's Telegram PushBot on Heroku",
+    "repository": "https://github.com/wh2004/PushBotV4Telegram",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/480px-Telegram_logo.svg.png",
+    "addons": [ "heroku-postgresql" ],
+    "env": {
+        "BOT_NAME": {
+          "description": "Bot用户名，不加@",
+          "value": "BotUserName"
+        },
+        "BOT_TOKEN": {
+          "description": "BotFather那里获取的BotToken",
+          "value": "BotToken"
+        },
+        "ADMIN_IDs": {
+          "description": "审核员的ID，多个用英文逗号分隔，第一个为超级管理员",
+          "value": "CheckerChatIDs"
+        },
+        "CHANNEL_IDs": {
+          "description": "推送频道的ID(数字或带@的英文)，多个用英文逗号分隔",
+          "value": "ChannelChatIDs"
+        },
+        "MAVEN_CUSTOM_GOALS": {
+          "description": "编译变量，勿修改",
+          "value": "clean assembly:assembly"
+        }
+    }
+}
