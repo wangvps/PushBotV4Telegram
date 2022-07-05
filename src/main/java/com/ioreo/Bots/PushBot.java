@@ -94,7 +94,8 @@ public class PushBot extends TelegramLongPollingSessionBot {
                         break;
                     case "/start":
                         sendSimpleMessage(message.getFrom().getId().toString(), "欢迎使用投稿机器人，请使用 /create 创建投稿\n如需取消已创建的投稿，请使用 /cancel \n"+
-                                "如果您有任何问题，请联系 @UniDMBot 或使用 /help 命令获取帮助 \n UniPushBot Version V Made by UniOreoX");
+                                "如果您有任何问题，请使用 /help 命令获取帮助 \n"+
+                                "如因投稿通过问题有异议，请联系管理员 @wangran10 \n UniPushBot Version V Made by UniOreoX");
                         break;
                     case "/pass":
                         String chatID = message.getFrom().getId().toString();
